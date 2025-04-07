@@ -1,7 +1,7 @@
 # DeSnow-GNN: A point cloud denoising algorithm for LiDAR in Adverse weather (DeSnow-GNN)
 This is the offical implementation of [DeSnow-GNN: A point cloud denoising algorithm for LiDAR in Adverse weather].
 
-## Illustration
+## Statement
 
 -Original point cloud.
 
@@ -48,7 +48,7 @@ Test network performance in evaluation set
 ```
 
 ## Inference
-Denoising point cloud and visualize\
+Denoising point cloud and visualize
 
 -Data structure like processes of training
 
