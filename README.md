@@ -16,10 +16,11 @@ Result for CADC and WADS dataset
 - [scikit-learn](https://scikit-learn.org/stable/install.html) (sklearn)
 
 ## Dataset
-The open source dataset used in the manuscript is connected as follows:
--[Canadian Adverse Driving Conditions datase](http://cadcd.uwaterloo.ca/)
--[Winter Adverse Driving dataSet](https://digitalcommons.mtu.edu/wads/)
--[Dense: Fog&Rain](https://www.uni-ulm.de/index.php?id=101568)
+The open-source datasets used in this work are available at:
+
+- [Canadian Adverse Driving Conditions Dataset (CADC)](http://cadcd.uwaterloo.ca/)  
+- [Winter Adverse Driving Dataset (WADS)](https://digitalcommons.mtu.edu/wads/)  
+- [DENSE: Fog & Rain Dataset](https://www.uni-ulm.de/index.php?id=101568)  
 
 ## Train
 -Original point cloud and its label in folder 
