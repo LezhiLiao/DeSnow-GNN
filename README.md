@@ -9,11 +9,14 @@ Result for CADC and WADS dataset
 | <div style="text-align:center"><em>Original point cloud</em></div> | <div style="text-align:center"><em>Original point cloud</em></div> |
 | ![De-snowed WADS](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_denoised.gif) | ![De-snowed CADC](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_denoised.gif) |
 | <div style="text-align:center"><em>De-snowed point cloud</em></div> | <div style="text-align:center"><em>De-snowed point cloud</em></div> |
-## Requirments
-- [pytorch_geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)<br>
-- `torch`, `open3d`, `scipy`, `numpy`, `subprocess`, `os`, `re`.
+## Requirements
+- [PyTorch Geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html) (torch_geometric)
+- [Open3D](http://www.open3d.org/docs/release/getting_started.html) (open3d)
+- [SciPy](https://scipy.org/install/) (scipy)
+- [scikit-learn](https://scikit-learn.org/stable/install.html) (sklearn)
 
 ## Dataset
+The open source dataset used in the manuscript is connected as follows:
 -[Canadian Adverse Driving Conditions datase](http://cadcd.uwaterloo.ca/)
 -[Winter Adverse Driving dataSet](https://digitalcommons.mtu.edu/wads/)
 -[Dense: Fog&Rain](https://www.uni-ulm.de/index.php?id=101568)
