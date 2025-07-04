@@ -27,39 +27,43 @@ The open-source datasets used in this work are available at:
 ```
 ./data
 ├── wads
-    └── {DRIVE_ID}
-        ├── labels/{FRAME_ID}.label
-        └── velodyne/{FRAME_ID}.bin
+    ├── labels/{FRAME_ID}.label
+    └── velodyne/{FRAME_ID}.bin
 ```
--Graph data construction
+-Graph data construction for training
 ```
-
+python3 preactgnn.py
 ```
 -Divide data into training set and evaluation set
 ```
-
+python3 divide.py
 ```
 
 -Training of network
 ```
-
+python3 train.py
 ```
 
 ## Evaluate
 Test network performance in evaluation set
 ```
-
+python3 testgnn.py
 ```
 
 ## Inference
-Denoising point cloud and visualize
-
--Data structure like processes of training
-
--Inference point cloud by network
+End to end point cloud denoising
+```
+python3 inference.py
 ```
 
+Convert point cloud to images:
+
+```
+python3 point2pic.py
 ```
 
--Visualized results can be found in the folder
+Create GIF animation from the generated images:
 
+```
+python3 pic2gif.py
+```
