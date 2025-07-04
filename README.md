@@ -1,4 +1,4 @@
-# DeSnow-GNN: A point cloud denoising algorithm for LiDAR in Adverse weather (DeSnow-GNN)
+# DeSnow-GNN: Spatiotemporal Graph Neural Network for Robust LiDAR Point Cloud Denoising in Adverse Weather
 This is the offical implementation of [DeSnow-GNN: Spatiotemporal Graph Neural Network for Robust LiDAR Point Cloud Denoising in Adverse Weather]. 
 
 ## Statement
