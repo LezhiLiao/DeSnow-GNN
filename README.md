@@ -6,9 +6,9 @@ This is the offical implementation of [DeSnow-GNN: A point cloud denoising algor
 | WADS Dataset | CADC Dataset |
 |--------------|--------------|
 | ![Original WADS](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_raw.gif) | ![Original CADC](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_raw.gif) |
-| *Original point cloud* | *Original point cloud* |
+| <div style="text-align:center"><em>Original point cloud</em></div> | <div style="text-align:center"><em>Original point cloud</em></div> |
 | ![De-snowed WADS](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_denoised.gif) | ![De-snowed CADC](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_denoised.gif) |
-| *De-snowed point cloud* | *De-snowed point cloud* |
+| <div style="text-align:center"><em>De-snowed point cloud</em></div> | <div style="text-align:center"><em>De-snowed point cloud</em></div> |
 ## Requirments
 - [pytorch_geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)<br>
 - `torch`, `open3d`, `scipy`, `numpy`, `subprocess`, `os`, `re`.
