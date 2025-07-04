@@ -3,12 +3,12 @@ This is the offical implementation of [DeSnow-GNN: A point cloud denoising algor
 
 ## Statement
 
--Original point cloud.
-![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_raw.gif)
-![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_raw.gif)
--De-snowed point cloud.
-![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_denoised.gif)
-![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_denoised.gif)
+| WADS Dataset | CADC Dataset |
+|--------------|--------------|
+| ![Original WADS](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_raw.gif) | ![Original CADC](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_raw.gif) |
+| *Original point cloud* | *Original point cloud* |
+| ![De-snowed WADS](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_denoised.gif) | ![De-snowed CADC](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_denoised.gif) |
+| *De-snowed point cloud* | *De-snowed point cloud* |
 ## Requirments
 - [pytorch_geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)<br>
 - `torch`, `open3d`, `scipy`, `numpy`, `subprocess`, `os`, `re`.
