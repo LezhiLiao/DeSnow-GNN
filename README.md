@@ -4,11 +4,11 @@ This is the offical implementation of [DeSnow-GNN: A point cloud denoising algor
 ## Statement
 
 -Original point cloud.
-![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_denoised.gif)
--Colored by result, red(False Negetive), green(False Positive), blue(True Positive), black(True Negative).
-
+![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_raw.gif)
+![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_raw.gif)
 -De-snowed point cloud.
-
+![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_denoised.gif)
+![img](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_denoised.gif)
 ## Requirments
 - [pytorch_geometric](https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html)<br>
 - `torch`, `open3d`, `scipy`, `numpy`, `subprocess`, `os`, `re`.
