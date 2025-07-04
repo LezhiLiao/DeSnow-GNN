@@ -1,8 +1,8 @@
 # DeSnow-GNN: A point cloud denoising algorithm for LiDAR in Adverse weather (DeSnow-GNN)
-This is the offical implementation of [DeSnow-GNN: A point cloud denoising algorithm for LiDAR in Adverse weather].
+This is the offical implementation of [DeSnow-GNN: Spatiotemporal Graph Neural Network for Robust LiDAR Point Cloud Denoising in Adverse Weather]. 
 
 ## Statement
-
+Result for CADC and WADS dataset
 | WADS Dataset | CADC Dataset |
 |--------------|--------------|
 | ![Original WADS](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/wads_raw.gif) | ![Original CADC](https://github.com/LezhiLiao/DeSnow-GNN/blob/master/gnn_updata/visualization/gif_path/cadc_raw.gif) |
