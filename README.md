@@ -37,43 +37,13 @@ Qualitative results on the WADS and CADC datasets:
 
 ## Requirements
 
-### Tested environment
+We recommend creating a clean conda environment first:
 
-- Ubuntu 20.04
-- Python 3.8
-- CUDA 11.8
-- cuDNN 8.6
-- GCC/G++ 9
-
-### Python dependencies
-
-The code depends on the following Python packages:
-
-- `torch`
-- `torch-geometric` (`import torch_geometric` in Python)
-- `torch-cluster`
-- `torch-scatter`
-- `numpy`
-- `scipy`
-- `scikit-learn`
-- `open3d`
-- `matplotlib`
-- `Pillow`
-- `joblib`
-
-### System packages relevant to this project
-
-If you are setting up a fresh Ubuntu environment, the following system packages are the ones most relevant to this repository:
-
-- `build-essential`
-- `cmake`
-- `git`
-- `python3.8`
-- `libcudnn8`
-- `libcudnn8-dev`
-- `cuda-toolkit-11-8`
-- `libgl1`
-- `libglib2.0-0`
+```bash
+conda create -n desnowgnn python=3.8
+conda activate desnowgnn
+pip install -r requirements.txt
+```
 
 ## Dataset Preparation
 
@@ -102,7 +72,6 @@ Note:
 
 - the current training pipeline is centered on WADS
 - `preprocess/split_data.py` first splits the WADS sequences into training and validation sets
-- path variables in the scripts are currently hard-coded and should be edited before running
 
 ## Pipeline
 
@@ -114,30 +83,12 @@ Run the split script first to create `train/` and `val/` subsets from the origin
 python3 preprocess/split_data.py
 ```
 
-By default, the script reads from:
-
-```text
-/root/autodl-tmp/wads
-```
-
-and writes the split dataset to:
-
-```text
-/root/autodl-tmp/wads_2
-```
-
 ### 2. Convert training point clouds into graph data
 
 After splitting the training data, preprocess the point clouds into graph-structured samples:
 
 ```bash
 python3 preprocess/preprocess.py
-```
-
-This script reads the training split and saves graph data under:
-
-```text
-/root/autodl-tmp/wads_2/train_graph_data
 ```
 
 ### 3. Train DeSnow-GNN
@@ -160,11 +111,6 @@ Evaluate a trained model on the validation split:
 python3 evaluate/eval.py
 ```
 
-Before running evaluation, update the following fields in `evaluate/eval.py`:
-
-- `MODEL_PATH`
-- `VAL_DATA_PATH`
-
 ## Inference
 
 Run end-to-end denoising on raw LiDAR frames:
@@ -173,14 +119,7 @@ Run end-to-end denoising on raw LiDAR frames:
 python3 inference/inf.py
 ```
 
-Before inference, update the following fields in `inference/inf.py`:
-
-- `folder_path`
-- `model_path`
-- `point_saving_path`
-- `channel`
-
-When running inference on CADC, both the input channel setting and the intensity-related feature handling should be adjusted. This is necessary because WADS and CADC are collected by LiDAR sensors with different beam configurations and different intensity distributions.
+When running inference on CADC, set `channel` to 4 dimensions to account for the LiDAR beam-number difference. The intensity should also be normalized to keep it consistent with WADS.
 
 ## Visualization
 
